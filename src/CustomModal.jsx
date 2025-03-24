@@ -506,7 +506,7 @@ const ModifyUserFormComponent = ({ onClose }) => {
 
       if (!userid) return;
 
-      const response = await fetch("http://localhost:9090/admin/user/getbyid", {
+      const response = await fetch("https://sales-savvy-backend.onrender.com:9090/admin/user/getbyid", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -539,7 +539,7 @@ const ModifyUserFormComponent = ({ onClose }) => {
     const email = formData.get("email");
     const role = formData.get("role");
 
-    const response = await fetch("http://localhost:9090/admin/user/modify", {
+    const response = await fetch("https://sales-savvy-backend.onrender.com:9090/admin/user/modify", {
       method: "PUT",
       credentials: "include",
       headers: {

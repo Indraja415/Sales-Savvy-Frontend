@@ -11,7 +11,7 @@ export function ProfileDropdown({ username }) {
   };
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:9090/api/auth/logout', {
+      const response = await fetch('https://sales-savvy-backend.onrender.com:9090/api/auth/logout', {
         method: 'POST', // Use POST as logout often involves session clearing
         credentials: 'include', // Include credentials like cookies for authentication
       });
